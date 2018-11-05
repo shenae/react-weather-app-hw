@@ -5,8 +5,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border: 1px solid white;
 }
-
 
 h1, h2, p {
   font-family: 'Montserrat';
@@ -23,6 +23,10 @@ h2 {
 .weather-container {
   display: flex;
   flex-direction: column;
+  border: 2px solid white;
+  width: 500px;
+  margin: 50px auto;
+  background-image: linear-gradient(120deg, #8fd3f4 0%, #84fab0 100%);
 }
 
 .lohi {

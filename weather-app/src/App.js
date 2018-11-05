@@ -21,7 +21,7 @@ class App extends Component {
     return (
         <div className="App">
           <Zip zip={this.handleZip}/>
-          {this.state.zip ? <Weather zip={this.state.zip} data={this.state.data}/> : <p>Please enter a Zip Code.</p>}
+          {this.state.zip ? <Weather className="Weather" zip={this.state.zip} data={this.state.data}/> : <p>Please enter a Zip Code.</p>}
         </div>
     );
   }
