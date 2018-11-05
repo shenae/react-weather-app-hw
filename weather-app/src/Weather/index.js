@@ -2,8 +2,22 @@ import React from 'react';
 import '../App.css';
 
 class Weather extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      fahrenheit: true
+    }
+    this.cToF = this.cToF.bind(this);
+  }
   kToF(num) {
-    return Math.floor(((num - 273.15) * 9 / 5) + 32);
+    return (this.state.fahrenheit ?
+    Math.floor(((num - 273.15) * 9 / 5) + 32) :
+    Math.floor(num - 273.15));
+  }
+  cToF() {
+    this.state.fahrenheit ?
+    this.setState({fahrenheit: false}) :
+    this.setState({fahrenheit: true});
   }
   convert() {
     return {
@@ -15,13 +29,12 @@ class Weather extends React.Component {
     }
   }
   render() {
-    console.log(this.props.data);
     let converted = this.convert();
     return (
       <div className="weather-container">
         <div>
-        <h2>{converted.city}</h2>
-        <h1>{converted.temp}°</h1>
+          <h2>{converted.city}</h2>
+          <h1 onClick={this.cToF}>{converted.temp}°</h1>
         </div>
         <div className="lohi">
           <h2>{converted.low}°<br />Low</h2>
