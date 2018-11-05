@@ -12,3 +12,6 @@ async function getWeatherData(zip) {
 }
 
 export default getWeatherData;
+
+//note that .env just looks like this:
+//REACT_APP_API_KEY=a629659de4127bd88c656bc41f8fca76
