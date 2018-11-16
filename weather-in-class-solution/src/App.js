@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import getWeatherData from './services/fetch-weather';
+import { getWeatherData } from './services/fetch-weather';
 import Form from './components/Form';
 import Weather from './components/Weather';
 
@@ -38,7 +38,7 @@ class App extends Component {
           handleSubmit={this.handleSubmit}
           onInputChange={this.handleChange}
           zip={this.state.zip}
-          />
+        />
           {this.state.weather ? <Weather weather={this.state.weather} /> : null}
       </div>
     );
