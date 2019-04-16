@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './WeatherForm.css';
 
 class WeatherForm extends Component {
     render() { 

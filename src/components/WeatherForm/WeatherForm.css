@@ -1,0 +1,11 @@
+input[type=text] {
+    width: 5%;
+    padding: 10px;
+    margin: 20px;
+    box-sizing: border-box;
+    font-size: 15px;
+  }
+
+  form{
+      font-style: italic;
+  }

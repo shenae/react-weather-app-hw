@@ -56,13 +56,16 @@ onClickHandler = (e) => {
       click = {this.onClickHandler} 
       zipcode = {this.state.zipcode}/>
       <br />
-        <h3>{this.state.city}</h3>
-        <h3>current temp</h3><h1>{this.state.currentTemp}</h1>
-        <h2>{this.state.description}</h2>
-        <h3>{this.state.min}</h3>
-        <h3>{this.state.max}</h3>
+        <h3>In {this.state.city}</h3>
+        <h3>the current temp is </h3><h1>{this.state.currentTemp}</h1>
+        <h2>It's {this.state.description} outside.</h2>
+        <h3>Low {this.state.min}</h3>
+        <h3>High {this.state.max}</h3>
       </div>
-    );
+
+// if(this.state.description == 'rain')
+// console.log('shower power');
+     );
   }
 }
 

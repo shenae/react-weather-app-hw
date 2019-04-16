@@ -1,3 +1,18 @@
+h1{
+  font-family: monospace;
+  font-size: 40px;
+}
+
+h2{
+  font-family: monospace;
+  font-size: 30px;
+}
+
+h3{
+  font-family: monospace;
+  font-size: 20px;
+}
+
 .App {
   text-align: center;
 }
